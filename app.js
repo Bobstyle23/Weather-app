@@ -10,7 +10,7 @@ function searchWeather() {
     return alert("Please enter a City Name");
   }
   var http = new XMLHttpRequest();
-  var apiKey = "0b30cbddaafed23a4056935032187574";
+  var apiKey = "Your key";
   var url =
     "http://api.openweathermap.org/data/2.5/weather?q=" +
     cityName +
