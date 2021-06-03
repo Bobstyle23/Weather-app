@@ -4,11 +4,22 @@ body {
   padding: 0;
   margin: 0;
   font-family: Helvetica Neue, Helvetica, Arial;
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(29, 231, 253, 1) 40%,
+    rgba(252, 176, 69, 1) 100%
+  );
 }
 
 header {
   height: 100px;
-  background-color: lightblue;
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(29, 231, 253, 1) 40%,
+    rgba(252, 176, 69, 1) 100%
+  );
   text-align: center;
   padding-top: 20px;
   box-shadow: 3px 3px 3px #ccc;
@@ -16,7 +27,7 @@ header {
   & h1 {
     font-size: 40px;
     font-weight: bold;
-    color: dodgerblue;
+    color: #833ab4;
     margin: 0;
   }
 }
@@ -31,11 +42,15 @@ header {
 
   & label {
     font-weight: bold;
+    color: #833ab4;
   }
 
   & input {
     font-size: inherit;
     font-family: inherit;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
   }
 
   & button {
@@ -43,9 +58,10 @@ header {
     font-size: inherit;
     background-color: dodgerblue;
     border: 1px solid dodgerblue;
-    border-radius: 3px;
+    border-radius: 10px;
     cursor: pointer;
     color: white;
+    padding: 10px;
 
     &:hover {
       background-color: deepskyblue;
@@ -58,17 +74,19 @@ header {
   border: 1px solid #ccc;
   width: 500px;
   margin: 100px auto auto;
-  background-color: deepskyblue;
+  background-color: #1de7fd;
   box-shadow: 2px 2px 3px #ccc;
   color: white;
   box-sizing: border-box;
   display: none;
   font-weight: bold;
+  border-radius: 25px;
 
   & h1 {
     font-size: 32px;
     margin-top: 0;
     margin-bottom: 30px;
+    color: #833ab4;
   }
   &Description {
     float: left;
